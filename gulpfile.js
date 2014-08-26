@@ -4,7 +4,7 @@ var browserSync = require('browser-sync');
 var concat = require('gulp-concat');
 
 gulp.task('browserify', function() {
-  gulp.src('src/js/main.js')
+  gulp.src('src/prode/js/main.js')
     .pipe(browserify({transform: 'reactify'}))
     .pipe(concat('main.js'))
     .pipe(gulp.dest('dist/js'));
@@ -19,7 +19,7 @@ gulp.task('browser-sync', ['build'], function() {
 });
 
 gulp.task('copy', function() {
-  gulp.src('src/index.html')
+  gulp.src('src/prode/index.html')
     .pipe(gulp.dest('dist'));
 });
 
