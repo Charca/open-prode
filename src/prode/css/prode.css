@@ -1,0 +1,19 @@
+.scheduleTable {
+	border:1px solid black;
+	height: 500px;
+	width: 400px;
+}
+
+.rowMatch {
+	clear: both;
+}
+
+.rowMatch .team {
+	float: left;
+	width: 47%;
+}
+
+.rowMatch .radio {
+	float:left;
+	width: 2%;
+}

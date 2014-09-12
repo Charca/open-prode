@@ -21,6 +21,9 @@ gulp.task('browser-sync', ['build'], function() {
 gulp.task('copy', function() {
   gulp.src('src/prode/index.html')
     .pipe(gulp.dest('dist'));
+
+  gulp.src('src/prode/json/**/*')
+    .pipe(gulp.dest('dist/json'));
 });
 
 gulp.task('watch', ['browser-sync'], function() {
